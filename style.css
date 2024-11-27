@@ -1,14 +1,64 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
-body{
-    background-color: rgb(244, 97, 47);
+
+@media screen and (max-width: 700px) {
+  body,
+  ul {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+  }
+  /* header */
+.menu{
+  background-color: azure;
+  display: flex;
+  justify-content: space-between;
 }
-main{
-    background-color: aliceblue;
-    width: 500px;
-    margin: auto;
-    padding: 20px;
-    box-shadow: 3px 3px 5px #555;
+  a {
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+  }
+  a:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  /* Sobre */
+  .Principal {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .Principal img {
+    width: 16rem;
+    border-radius: 10%;
+    border: 0.2rem solid #bbdcef ;
+    box-shadow: 5px 3px 5px #bbdcef ;
+    display: inline-block;
+    margin-top: 5rem;
+  }
+  .Principal h1 {
+    color: rgb(194, 245, 240);
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: lighter;
+  }
+  .Principal p {
+    color: rgba(220, 230, 239, 0.895);
+    font-size: 1rem;
+    font-family: sans-serif;
+    margin: 1rem;
+  }
+  .rede-sociais {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+  }
+  .rede-sociais img {
+    width: 3rem;
+    height: 3rem;
+  }
 }
